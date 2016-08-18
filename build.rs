@@ -234,7 +234,7 @@ fn main() {
         if cfg!(any(target_os="freebsd", target_os="linux")) {
             println!("-l ffi -l ncursesw -l stdc++ -l z");
         } else if cfg!(target_os="macos") {
-            println!("-l ffi -l ncurses -l stdc++ -l z");
+            println!("-l ffi -l ncurses -l sc++ -l z");
         } else {
             panic!("unsupported operating system for static linking");
         }
